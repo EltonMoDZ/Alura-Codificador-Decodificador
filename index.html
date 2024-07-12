@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
-    <title>Decodificador</title>
+    <title>Codificador e Decodificador</title>
 </head>
 <body class="pagina">
     <header class="sidebar">
@@ -14,21 +14,23 @@
     </header>
     <main class="principal">
         <section class="Codificador__elementos">
-            <h1 class="titulo">Codificador e Decodificador by Alura</h1>
+            <h1 class="titulo">Codificador e Decodificador by Elton</h1>
             <textarea id="texto" placeholder="Digite seu texto"></textarea>
             <p id="icone-texto">
                 <img src="assets/bi_exclamation-circle-fill.svg">
                 Apenas letras minúsculas e sem acento.
             </p>
             <div class="botoes">
-                <button class="Codificador__elementos__botoes" type="button">Codificar</button>
-                <button class="Codificador__elementos__botoes" type="button">Decodificar</button>
+                <button id="codificar" class="Codificador__elementos__botoes" type="button">Codificar</button>
+                <button id="decodificar" class="Codificador__elementos__botoes" type="button">Decodificar</button>
             </div>
         </section>
         <section class="resultado">
             <h2 class="titulo2">Resultado</h2>
-            <textarea id="resultado" placeholder="Resultado"></textarea>
+            <textarea id="resultado" placeholder="Resultado" readonly></textarea>
+            <button id="copiar" class="Copiar__botao" type="button">Copiar</button>
         </section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
